@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block%}
+<form  method="post">
+  {{form.as_p}}
+  {%csrf_token%}
+  <input type="submit" class="btn btn-lg btn-success" name="" value="insert records">
+  <!-- <a href="/" class="btn btn-lg btn-success">see the data</a> -->
+</form>
+{% endblock%}
